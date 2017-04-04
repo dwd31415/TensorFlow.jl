@@ -141,7 +141,8 @@ for func in ["Log", "Exp", "Neg", "Ceil", "Floor", "Sqrt", "Square",
     "Cast", "Relu", "Relu6", "Elu", "Softplus", "Softsign",
     "Softmax", "Sigmoid", "Tanh",
     "LogSoftmax", "LRN", "LogicalAnd", "LogicalNot", "LogicalOr", "LogicalXor",
-    "Sign", "Exit", "Enter", "NextIteration", "LoopCond"]
+    "Sign", "Exit", "Enter", "NextIteration", "LoopCond",
+    "IsFinite", "IsInf", "IsNan"]
     register_shape(func) do op
         [_get_shape(get_input(op, 1))]
     end
